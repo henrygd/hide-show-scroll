@@ -1,6 +1,6 @@
 {
 	"name": "hide-show-scroll",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "dist/hide-show-scroll.umd.js",
 	"module": "index.js",
 	"description": "enables / disables the html scrollbar without content jumping around",
@@ -16,7 +16,6 @@
 		"rollup-build": "rollup -c",
 		"sass-watch": "sass --watch --no-source-map demo/demo.scss:demo/demo.css",
 		"sass-build": "sass --style compressed --no-source-map demo/demo.scss:demo/demo.css",
-		"postinstall": "npm run build",
 		"deploy": "gh-pages -d demo"
 	},
 	"devDependencies": {
