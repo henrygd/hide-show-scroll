@@ -1,1 +1,1 @@
-var hideShowScroll=function(){let t,e,n=document.documentElement;return{hide:function(){e||(t=window.innerWidth-n.clientWidth,n.style.overflowY="hidden",t&&(n.style.paddingRight=t+"px"),e=1)},show:function(){n.style.overflowY="auto",t&&(n.style.paddingRight="0"),e=0}}}();
+var hideShowScroll=function(){let t,e,n=document.documentElement;return{hide:function(){e||(t=window.innerWidth-n.clientWidth,n.style.overflow="hidden",t&&(n.style.paddingRight=t+"px"),e=1)},show:function(){n.style.overflow="auto",t&&(n.style.paddingRight="0"),e=0}}}();

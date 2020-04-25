@@ -7,13 +7,13 @@ let hide = function () {
 		return
 	}
 	scrollbarWidth = window.innerWidth - html.clientWidth
-	html.style.overflowY = 'hidden'
+	html.style.overflow = 'hidden'
 	scrollbarWidth && (html.style.paddingRight = `${scrollbarWidth}px`)
 	hidden = true
 }
 
 let show = function () {
-	html.style.overflowY = 'auto'
+	html.style.overflow = 'auto'
 	scrollbarWidth && (html.style.paddingRight = '0')
 	hidden = false
 }

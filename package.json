@@ -4,6 +4,7 @@
 	"main": "dist/hide-show-scroll.umd.js",
 	"module": "index.js",
 	"description": "enables / disables the html scrollbar without content jumping around",
+	"license": "MIT",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/henrygd/hide-show-scroll.git"
@@ -16,16 +17,18 @@
 		"rollup-build": "rollup -c",
 		"sass-watch": "sass --watch --no-source-map demo/demo.scss:demo/demo.css",
 		"sass-build": "sass --style compressed --no-source-map demo/demo.scss:demo/demo.css",
-		"deploy": "gh-pages -d demo"
+		"deploy": "gh-pages -d demo",
+		"release": "release-it --dry-run"
 	},
 	"devDependencies": {
 		"gh-pages": "^2.2.0",
 		"live-server": "^1.2.1",
-		"node-sass": "^4.13.1",
+		"node-sass": "^4.14.0",
 		"npm-run-all": "^4.1.5",
-		"rollup": "^2.7.1",
+		"release-it": "^13.5.5",
+		"rollup": "^2.7.2",
 		"rollup-plugin-filesize": "^7.0.0",
 		"rollup-plugin-terser": "^5.3.0",
-		"sass": "^1.26.3"
+		"sass": "^1.26.5"
 	}
 }
