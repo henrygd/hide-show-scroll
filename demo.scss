@@ -7,20 +7,19 @@ body {
 	flex-direction: column;
 	flex-grow: 1;
 	scroll-behavior: smooth;
+	background: #f1f1f1;
 }
 
 body {
-	// background: #333;
-	// color: #fff;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-tap-highlight-color: transparent;
 	font-size: 17px;
-	background: #fafafa;
+	background: #fff;
 }
 
 p {
-	line-height: 1.8;
+	line-height: 2;
 }
 
 main {
@@ -45,6 +44,11 @@ h2,
 h3,
 h4 {
 	line-height: 1.4;
+	a {
+		text-decoration: none;
+		position: relative;
+		top: 2px;
+	}
 }
 
 .buttons {
@@ -64,5 +68,35 @@ button {
 	&:hover,
 	&:focus {
 		background-color: #ff2a13;
+	}
+}
+
+.github-link {
+	background: #2a2a2a;
+	color: #fff;
+	padding: 13px 5% 9px;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 0.2s;
+	display: block;
+	margin-top: 20px;
+	&:first-child {
+		margin: 0;
+	}
+	&:hover,
+	&:focus {
+		background: #333;
+	}
+	span {
+		position: relative;
+		top: -5px;
+		margin: 0 0 0 3px;
+		font-size: 16px;
+		font-weight: 500;
+	}
+	svg {
+		width: 20px;
+		height: 20px;
+		fill: #fff;
 	}
 }
