@@ -5,6 +5,7 @@
 	"module": "index.js",
 	"description": "enables / disables the html scrollbar without content jumping around",
 	"license": "MIT",
+	"homepage": "https://henrygd.me/hide-show-scroll",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/henrygd/hide-show-scroll.git"
@@ -18,7 +19,7 @@
 		"sass-watch": "sass --watch --no-source-map demo/demo.scss:demo/demo.css",
 		"sass-build": "sass --style compressed --no-source-map demo/demo.scss:demo/demo.css",
 		"deploy": "gh-pages -d demo",
-		"release": "release-it --dry-run"
+		"release": "release-it"
 	},
 	"devDependencies": {
 		"gh-pages": "^2.2.0",
