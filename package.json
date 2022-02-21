@@ -1,6 +1,6 @@
 {
 	"name": "hide-show-scroll",
-	"version": "1.1.2",
+	"version": "2.0.0",
 	"main": "dist/hide-show-scroll.umd.js",
 	"module": "dist/hide-show-scroll.mjs",
 	"description": "enables / disables the html scrollbar without content jumping around",
@@ -10,7 +10,7 @@
 		"type": "git",
 		"url": "https://github.com/henrygd/hide-show-scroll.git"
 	},
-		"keywords": [
+	"keywords": [
 		"scroll",
 		"overflow"
 	],
