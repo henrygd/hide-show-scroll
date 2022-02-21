@@ -1,0 +1,1 @@
+let e,l,{documentElement:o,body:t}=document,r=()=>{o.scrollHeight>o.clientHeight&&(e=e||getComputedStyle(o).overflowY,l=l||getComputedStyle(t).overflowY,o.style.overflowY="hidden",t.style.overflowY="scroll")},s=()=>{o.style.overflowY=e,t.style.overflowY=e};export{r as hideScroll,s as showScroll};

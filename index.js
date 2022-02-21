@@ -1,27 +1,21 @@
-let html = document.documentElement
-let scrollbarWidth
-let defaultOverflowStyle
-let hidden
+let { documentElement: html, body } = document
+let defaultHtmlOverflow, defaultBodyOverflow
 
-let hide = function () {
-	if (hidden) {
-		return
+export let hideScroll = () => {
+	if (html.scrollHeight > html.clientHeight) {
+		// store existing overflow style
+		defaultHtmlOverflow =
+			defaultHtmlOverflow || getComputedStyle(html).overflowY
+		defaultBodyOverflow =
+			defaultBodyOverflow || getComputedStyle(body).overflowY
+		// hide overflow
+		html.style.overflowY = 'hidden'
+		body.style.overflowY = 'scroll'
 	}
-	// store existing overflow style
-	defaultOverflowStyle = defaultOverflowStyle || getComputedStyle(html).overflow
-	// calculate scrollbar width if any
-	scrollbarWidth = window.innerWidth - html.clientWidth
-	// hide overflow
-	html.style.overflow = 'hidden'
-	// add padding to compensate for scrollbar and prevent shifting
-	scrollbarWidth && (html.style.paddingRight = `${scrollbarWidth}px`)
-	hidden = true
 }
 
-let show = function () {
-	html.style.overflow = defaultOverflowStyle
-	scrollbarWidth && (html.style.paddingRight = 0)
-	hidden = false
+export let showScroll = () => {
+	// show overflow
+	html.style.overflowY = defaultHtmlOverflow
+	body.style.overflowY = defaultHtmlOverflow
 }
-
-export default { hide, show }
