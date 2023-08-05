@@ -441,8 +441,8 @@ packages:
       retry: 0.12.0
     dev: true
 
-  /async@2.6.3:
-    resolution: {integrity: sha512-zflvls11DCy+dQWzTW2dzuilv8Z5X/pjfmZOWba6TNIVDm+2UDaJmXSOXlasHKfNBs8oo3M0aT50fDEWfKZjXg==}
+  /async@2.6.4:
+    resolution: {integrity: sha512-mzo5dfJYwAn29PeiJ0zvwTo04zj8HDJj0Mn8TD7sno7q12prdbnasKJHhkm2c1LgrhlJ0teaea8860oxi51mGA==}
     dependencies:
       lodash: 4.17.15
     dev: true
@@ -1427,7 +1427,7 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
     dependencies:
-      async: 2.6.3
+      async: 2.6.4
       commander: 2.20.3
       email-addresses: 3.1.0
       filenamify-url: 1.0.0
